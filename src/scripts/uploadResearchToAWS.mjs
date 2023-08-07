@@ -11,7 +11,6 @@ AWS.config.update({
 // Create an S3 instance
 const s3 = new AWS.S3();
 
-// Define a function to upload a single file
 async function uploadFile(filePath, bucketName) {
   const fileContent = fs.readFileSync(filePath);
 
